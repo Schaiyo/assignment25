@@ -7,6 +7,8 @@ import { ProductlistComponent } from './productlist/productlist.component';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit {
+  title: 'assignment20';
+  
   @ViewChild('productList', { static: true})
   productList: ProductlistComponent;
 
