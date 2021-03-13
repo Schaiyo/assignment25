@@ -11,7 +11,9 @@ export class ProductitemComponent implements OnInit {
   product: Product;
 
   @Output()
-  OnSelected: EventEmitter<Product> = new EventEmitter();
+  OnSelected: EventEmitter<ProductitemComponent> = new EventEmitter();
+
+  isSelected: boolean;
 
   constructor() { }
 
@@ -19,7 +21,7 @@ export class ProductitemComponent implements OnInit {
   }
 
   select() {
-    this.OnSelected.emit(this.product);
+    this.OnSelected.emit(this);
   }
 
 }
