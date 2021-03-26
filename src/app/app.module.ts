@@ -4,6 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { ProductlistComponent } from './productlist/productlist.component';
 import { ProductitemComponent } from './productitem/productitem.component';
+import { BackendService } from './backend.service';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,7 @@ import { ProductitemComponent } from './productitem/productitem.component';
   imports: [
     BrowserModule
   ],
-  providers: [],
+  providers: [BackendService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
