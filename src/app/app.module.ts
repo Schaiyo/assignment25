@@ -1,19 +1,21 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { CatalogModule } from './catalog/catalog.module';
+import { HomeModule } from './home/home.module';
 
 import { AppComponent } from './app.component';
-import { ProductlistComponent } from './productlist/productlist.component';
-import { ProductitemComponent } from './productitem/productitem.component';
 import { BackendService } from './backend.service';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ProductlistComponent,
-    ProductitemComponent
+    HomeComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    CatalogModule,
+    HomeModule
   ],
   providers: [BackendService],
   bootstrap: [AppComponent]

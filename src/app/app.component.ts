@@ -1,6 +1,6 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { BackendService } from './backend.service';
-import { ProductlistComponent } from './productlist/productlist.component';
+import { ProductlistComponent } from './catalog/productlist/productlist.component';
 
 @Component({
   selector: 'app-root',
