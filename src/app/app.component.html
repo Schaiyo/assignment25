@@ -1,6 +1,24 @@
-<app-navbar></app-navbar>
-<app-main-content></app-main-content>
 <div>
-  <h2>Product List</h2>
-  <app-productlist #productList></app-productlist>
+  <ul>
+    <li>
+      <a [routerLink]="['/']">Home</a>
+    </li>
+    <li>
+      <a [routerLink]="['/login']">Login</a>
+    </li>
+    <li>
+      <a [routerLink]="['/products']">Products</a>
+    </li>
+    <li>
+      <a [routerLink]="['/products/222']">Products Id 222</a>
+    </li>
+  </ul>
+</div>
+
+<div>
+  <router-outlet></router-outlet>
+</div>
+
+<div>
+  ..footer ..
 </div>
